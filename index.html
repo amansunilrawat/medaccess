@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedAccess | Medicine Accessibility & Affordability</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">+</span><span>MedAccess</span></div>
+  <nav>
+    <a href="#search">Search</a>
+    <a href="#providers">Providers</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">MEDICINE ACCESSIBILITY PLATFORM</p>
+      <h1>Find the right medicine.<br><span>At the right price.</span></h1>
+      <p class="hero-copy">Search medicines, compare prices, check availability and discover nearby verified providers.</p>
+      <a class="primary-btn" href="#search">Search Medicines</a>
+    </div>
+    <div class="hero-card">
+      <div class="stat"><strong id="medicineCount">0</strong><small>Medicines</small></div>
+      <div class="stat"><strong id="providerCount">0</strong><small>Verified Providers</small></div>
+      <div class="stat"><strong>24/7</strong><small>Search Access</small></div>
+    </div>
+  </section>
+
+  <section id="search" class="section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">MEDICINE SEARCH</p>
+        <h2>Search & compare</h2>
+      </div>
+      <span class="ds-badge">Hash Map + Sorting</span>
+    </div>
+
+    <div class="search-box">
+      <input id="medicineInput" type="text" placeholder="Enter medicine name (e.g. Paracetamol)" autocomplete="off">
+      <button id="searchBtn" class="primary-btn">Search</button>
+    </div>
+
+    <div id="searchMessage" class="message"></div>
+    <div id="results" class="results"></div>
+  </section>
+
+  <section id="providers" class="section alt">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">LOCATION AWARE</p>
+        <h2>Nearby verified providers</h2>
+      </div>
+      <span class="ds-badge">Graph</span>
+    </div>
+    <div id="providerGrid" class="provider-grid"></div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="about-grid">
+      <div>
+        <p class="eyebrow">DATA STRUCTURES MINI PROJECT</p>
+        <h2>How MedAccess works</h2>
+        <p class="muted">The prototype demonstrates how data structures can support fast medicine discovery and comparison.</p>
+      </div>
+      <div class="flow">
+        <div>Medicine Input</div><span>→</span>
+        <div>Hash Map Search</div><span>→</span>
+        <div>Availability</div><span>→</span>
+        <div>Price Sort</div><span>→</span>
+        <div>Nearby Providers</div>
+      </div>
+    </div>
+
+    <div class="ds-grid">
+      <article><b>Hash Map</b><p>Fast lookup of medicines by name.</p></article>
+      <article><b>Array / Vector</b><p>Stores provider offers and medicine records.</p></article>
+      <article><b>Sorting</b><p>Arranges available offers from lowest to highest price.</p></article>
+      <article><b>Graph</b><p>Represents connections between locations and providers.</p></article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <strong>MedAccess</strong> — Data Structures Mini Project
+  <span>Aman Rawat & Abhishek Singh Chib</span>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
